@@ -133,8 +133,8 @@ if __name__ == "__main__":
     tdata['late'] = set_late(tdata)
 
     tdataGrouped = group_transactions(tdata)
-    rcdataGrouped = rcdata
-    # rcdataGrouped = group_cancels(rcdata)
+
+    rcdataGrouped = group_cancels(rcdata)
 
     mergedData = merge_sets(tdataGrouped, rcdataGrouped, idMergeOn)
 
